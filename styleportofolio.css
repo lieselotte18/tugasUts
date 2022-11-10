@@ -1,0 +1,112 @@
+ {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+  font-family: 'HomeAndWork';
+  src: url(HomeAndWork.otf) format('truetype');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+h2{
+  font: center;
+}
+.halaman {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 80px;
+    font-weight: 800;
+    float: left;
+    font-family: 'HomeAndWork';
+    color: #404258;
+}
+
+.portofolio {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 13px;
+    margin :15px;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: #BBE1FA;
+    z-index: 1;
+    border-bottom:1px solid #364f6b;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+  }
+nav ul li a:hover {
+  color: red;
+}
+
+@media screen and (max-width: 991.98px) {
+    .halaman {
+    width: 90%;
+    }
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+    .portofolio{
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }

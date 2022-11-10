@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yoga Aria Kusuma</title>
+    <link rel="stylesheet" type="text/css" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+        <div class="halaman">
+            <div class="logo">
+                <a>Welcome To My Website</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Pendidikan.html">Pendidikan</a></li>
+                    <li><a href="JadwalKuliah.html">Jadwal Kuliah</a></li>
+                    <li><a href="Aktivitas.html">Aktivitas</a></li>
+                    <li><a href="Portofolio.html">Portofolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="yoga.jpg" class="ini">
+    <div class="kolom">
+        <p class="isi">About Me</p>
+        <h1>Hi, Saya Yoga Aria Kusuma. Saya merupakan seorang Mahasiswa semester 3 dari Institut Teknologi PLN yang berasal dari daerah Karanganyar, Jawa Tengah.</h1>
+        <p><a href="AboutMe.html" class="more">More About Me</a></p>
+    </div>
+    <div>
+        <div class="halaman2">
+            &copy; 2022. <b>Yoga Aria Kusuma</b> All Rights Reserved.
+        </div>
+    </div>
+
+      
+       <div class="wrapper">
+         <div class="button">
+            <div class="icon">
+                <a href="https://web.facebook.com/profile.php?id=100010408920206"><i class="fab fa-facebook-f"></i></a>
+               
+            </div>
+            <span>Facebook</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+                <a href="https://twitter.com/Aphrodi42"> <i class="fab fa-twitter"></i></a>
+              
+            </div>
+            <span>Twitter</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+                <a href="https://www.instagram.com/invites/contact/?i=1vty9orwqn384&utm_content=1cnvpgq"><i class="fab fa-instagram"></i></a>
+            </div>
+            <span>Instagram</span>
+         </div>
+                 <div class="button">
+            <div class="icon">
+                <a href="https://www.youtube.com/channel/UCna3BAvdFrFByatW17eoJJQ"><i class="fab fa-youtube"></i></a>
+            </div>
+            <span>YouTube</span>
+         </div>
+      </div>
+      <div class="tanggal">
+   <p>Tanggal/Waktu: <span id="tanggalwaktu"></span></p>
+<script>
+    var tw = new Date();
+    if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+    else (a=tw.getTime());
+    tw.setTime(a);
+    var tahun= tw.getFullYear ();
+    var hari= tw.getDay ();
+    var bulan= tw.getMonth ();
+    var tanggal= tw.getDate ();
+    var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+    var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+    document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
+</script>
+</div>
+</body>
+</html>
